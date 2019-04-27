@@ -32,6 +32,15 @@ const reducer = (state = initialState, action) => {
         value: action.input
       };
 
+    case "CLEAR_CHANGE":
+      console.log("Clear", action);
+
+      return {
+        ...state,
+        search: [],
+        value: ""
+      };
+
     default:
       return state;
   }

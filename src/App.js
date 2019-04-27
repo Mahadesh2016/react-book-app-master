@@ -6,7 +6,7 @@ import { FetchApiBooks } from "./store/actions/BooksAction";
 import SearchPage from "./components/SearchPage";
 import SinglePageCard from "./components/SinglePageCard";
 
-class App extends Component {
+export class App extends Component {
   componentDidMount() {
     this.props.fetchBooks();
   }
