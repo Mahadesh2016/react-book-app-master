@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/react-book-app-master/static/js/runtime~main.b9691e95.js"
   },
   {
-    "revision": "b3e39dbc1caaa9492129",
-    "url": "/react-book-app-master/static/js/main.b3e39dbc.chunk.js"
+    "revision": "0b5354d57f2274d4038b",
+    "url": "/react-book-app-master/static/js/main.0b5354d5.chunk.js"
   },
   {
     "revision": "ed6f48b7c65d434d3281",
     "url": "/react-book-app-master/static/js/1.ed6f48b7.chunk.js"
   },
   {
-    "revision": "b3e39dbc1caaa9492129",
-    "url": "/react-book-app-master/static/css/main.ad2dd436.chunk.css"
+    "revision": "0b5354d57f2274d4038b",
+    "url": "/react-book-app-master/static/css/main.975e3e81.chunk.css"
   },
   {
-    "revision": "e40d8feb1e9a0e191bb2fcec53ececbc",
+    "revision": "3b7d34baeb3c3f234ecb96eb08ffc1a3",
     "url": "/react-book-app-master/index.html"
   }
 ];
