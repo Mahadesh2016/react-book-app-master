@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, BrowserRouter, Route, Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import LandingPage from "./components/LandingPage";
 import { FetchApiBooks } from "./store/actions/BooksAction";
@@ -13,13 +13,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route path="/" exact component={LandingPage} />
             <Route path="/search" exact component={SearchPage} />
             <Route path="/:item_slug" exact component={SinglePageCard} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
