@@ -71,7 +71,6 @@ export class SinglePageCard extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  debugger;
   let slug = ownProps.match.params.item_slug;
   return {
     book: state.books.find(item => item.best_book.id === slug),
@@ -80,7 +79,6 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  debugger;
   let slug = ownProps.match.params.item_slug;
   return {
     getDescription: () => {

@@ -35,7 +35,6 @@ function mapStateToProps(state = []) {
 }
 
 const mapDispatchToProps = dispatch => {
-  debugger;
   return {
     fetchBooks: () => {
       dispatch(FetchApiBooks());

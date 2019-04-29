@@ -19,7 +19,7 @@ export function parseXMLResponse(response) {
 export function getDescription(data) {
   const parser = new DOMParser();
   const XMLResponse = parser.parseFromString(data, "application/xml");
-  debugger;
+
   const parseError = XMLResponse.getElementsByTagName("parsererror");
   let description = "";
   if (parseError.length) {

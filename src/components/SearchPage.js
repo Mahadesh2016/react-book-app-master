@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import SearchList from "./SearchList";
 import { connect } from "react-redux";
+import {
+  FetchApiBooks,
+  FetchApiBooksbyFilter
+} from "../store/actions/BooksAction";
 
 class SearchPage extends Component {
   constructor(props) {
@@ -45,10 +49,15 @@ function mapStateToProps(state) {
     input: state.input
   };
 }
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, props) => {
   return {
+    fetchBooks: () => {
+      console.log(props.input);
+      dispatch(FetchApiBooks(props.input));
+    },
     handleInput: e => {
-      dispatch({ type: "INPUT_CHANGE", input: e.target.value });
+      if (e.target.value !== undefined && e.target.value.length > 0)
+        dispatch(FetchApiBooksbyFilter(e.target.value));
     },
     clearInput: e => {
       dispatch({ type: "CLEAR_CHANGE", input: "" });

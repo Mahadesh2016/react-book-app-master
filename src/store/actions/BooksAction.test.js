@@ -15,7 +15,7 @@ describe("Aync Actions", () => {
   });
 });
 
-describe("fetchBooksSuccess", () => {
+describe("fetch books create action", () => {
   it("it should create FETCH_BOOKS action", () => {
     // xml mock data imported.
     const books = data;
@@ -25,7 +25,6 @@ describe("fetchBooksSuccess", () => {
       headers: { "content-type": "application/xml" }
     });
 
-    console.log("first");
     const expectedActions = [
       {
         type: "FETCH_BOOKS",
@@ -38,21 +37,15 @@ describe("fetchBooksSuccess", () => {
     return store.dispatch(bookActions.FetchApiBooks()).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
     });
-
-    // expect(action).toEqual(expectedActions);
   });
 });
 
-describe("get Description Success", () => {
+describe("get Description create action", () => {
   it("it should create GET_DESCRIPTION action", () => {
-    // xml mock data imported.
-    const books = data;
-
-    console.log("first");
     const expectedActions = [
       {
         type: "GET_DESCRIPTION",
-        data: parseXMLResponse(books)
+        data: "No description found."
       }
     ];
 
@@ -61,7 +54,5 @@ describe("get Description Success", () => {
     return store.dispatch(bookActions.GetDescription(112251)).then(() => {
       expect(store.getActions()).toEqual(expectedActions);
     });
-
-    // expect(action).toEqual(expectedActions);
   });
 });
