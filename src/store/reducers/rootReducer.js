@@ -5,7 +5,8 @@ const initialState = {
   search: [],
   author: [],
   likes: [],
-  add: []
+  add: [],
+  description: ""
 };
 
 const reducer = (state = initialState, action) => {
@@ -15,6 +16,18 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         books: action.data
+      };
+    case "GET_DESCRIPTION":
+      debugger;
+      return {
+        ...state,
+        description: action.data
+      };
+    case "CLEAR_DESCRIPTION":
+      debugger;
+      return {
+        ...state,
+        description: "Fetching description for this book..."
       };
     case "INPUT_CHANGE":
       console.log("Input", action);

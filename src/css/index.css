@@ -597,14 +597,14 @@ h2 {
     background: transparent;
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 700px;
     width: 97%;
     padding: 0 3%;
     position: relative;
   }
   .book img {
     width: 420px;
-    height: 630px;
+    height: 557px;
     padding: 0px 0 0;
     position: absolute;
     top: 39px;
@@ -617,6 +617,14 @@ h2 {
     box-sizing: border-box;
     margin: 0px auto;
     position: relative;
+  }
+  .rating {
+    bottom: 50px;
+    position: absolute;
+  }
+  .book-text .innercontainer {
+    height: 350px;
+    overflow-y: scroll;
   }
   .single-card-category {
     grid-column-start: 1;
@@ -633,7 +641,7 @@ h2 {
   .btn-back {
     position: absolute;
     bottom: 30px;
-    right: 78px;
+    right: 10px;
   }
   .ctg {
     writing-mode: vertical-rl;
