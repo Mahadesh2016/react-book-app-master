@@ -1,7 +1,7 @@
 {
   "main.css": "/react-book-app-master/static/css/main.5497d1fe.chunk.css",
-  "main.js": "/react-book-app-master/static/js/main.46fb35a8.chunk.js",
-  "main.js.map": "/react-book-app-master/static/js/main.46fb35a8.chunk.js.map",
+  "main.js": "/react-book-app-master/static/js/main.0405a764.chunk.js",
+  "main.js.map": "/react-book-app-master/static/js/main.0405a764.chunk.js.map",
   "static/js/1.ac3ed7a0.chunk.js": "/react-book-app-master/static/js/1.ac3ed7a0.chunk.js",
   "static/js/1.ac3ed7a0.chunk.js.map": "/react-book-app-master/static/js/1.ac3ed7a0.chunk.js.map",
   "runtime~main.js": "/react-book-app-master/static/js/runtime~main.b9691e95.js",
@@ -9,6 +9,6 @@
   "static/media/index.css": "/react-book-app-master/static/media/back1.9c6204e9.svg",
   "static/css/main.5497d1fe.chunk.css.map": "/react-book-app-master/static/css/main.5497d1fe.chunk.css.map",
   "index.html": "/react-book-app-master/index.html",
-  "precache-manifest.69ac02a547a15989dae1d2d864c0f1f1.js": "/react-book-app-master/precache-manifest.69ac02a547a15989dae1d2d864c0f1f1.js",
+  "precache-manifest.a703d499da2161cb60bdc0c87029cea9.js": "/react-book-app-master/precache-manifest.a703d499da2161cb60bdc0c87029cea9.js",
   "service-worker.js": "/react-book-app-master/service-worker.js"
 }
