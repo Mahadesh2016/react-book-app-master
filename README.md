@@ -53,3 +53,9 @@ To run the test cases use the following command :
 2. Displays upto 20 search results in cards.
 3. Displays only title, author and average rating .
 4. See the description and other details by clicking on the title .
+
+# Corrections & Future works
+
+1. The api call might be slow. A Spinner needs to be displayed to check if there are any api calls in progress and display the data once the api completed.
+
+2. More test cases have to be written.

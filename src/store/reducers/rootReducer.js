@@ -1,12 +1,10 @@
 const initialState = {
   books: [],
-  menu: [],
   value: "",
   search: [],
   author: [],
-  likes: [],
-  add: [],
-  description: ""
+  description: "",
+  favbooks: []
 };
 
 const reducer = (state = initialState, action) => {
@@ -14,7 +12,7 @@ const reducer = (state = initialState, action) => {
     case "FETCH_BOOKS":
       return {
         ...state,
-        books: action.data
+        favbooks: action.data
       };
     case "FETCH_BOOKS_PARAM":
       const newstate = {

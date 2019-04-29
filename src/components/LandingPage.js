@@ -30,7 +30,7 @@ export class LandingPage extends Component {
 
 function mapStateToProps(state = []) {
   return {
-    booksList: state.books
+    booksList: state.favbooks
   };
 }
 
