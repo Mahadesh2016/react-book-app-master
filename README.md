@@ -50,9 +50,11 @@ To run the test cases use the following command :
 # Features In Current Version:
 
 1. Search for books by title, author.
-2. Displays upto 20 search results in cards.
-3. Displays only title, author and average rating .
-4. See the description and other details by clicking on the title .
+2. Displays favourites books searched by text "programming languages". This can be modified to display favourite books queried by that text but note that mock data for text has been created using the text "programming languages". so while running the tests modify the text to "programming languages".
+   The search key is present in src/keys file .
+3. Displays upto 20 search results in cards.
+4. Displays only title, author and average rating .
+5. See the description and other details by clicking on the title .
 
 # Corrections & Future works
 

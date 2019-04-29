@@ -12,12 +12,14 @@ const reducer = (state = initialState, action) => {
     case "FETCH_BOOKS":
       return {
         ...state,
-        favbooks: action.data
+        favbooks: action.data,
+        books: []
       };
     case "FETCH_BOOKS_PARAM":
       const newstate = {
         ...state,
-        books: action.data
+        books: action.data,
+        favbooks: []
       };
 
       let newList = newstate.books.filter(item => {

@@ -1,14 +1,12 @@
 import Axios from "axios";
 import { parseXMLResponse, getDescription } from "../../api/parserApi";
-import { REACT_APP_API_KEY } from "../../keys";
+import { REACT_APP_API_KEY, SEARCH_KEY } from "../../keys";
 
 export const FetchApiBooks = () => {
   return function(dispatch) {
-    const searchText = "programming languages";
-
     const requestUri =
       `https://cors-anywhere.herokuapp.com/` +
-      `https://www.goodreads.com/search/index.xml?key=${REACT_APP_API_KEY}&q=${searchText}`;
+      `https://www.goodreads.com/search/index.xml?key=${REACT_APP_API_KEY}&q=${SEARCH_KEY}`;
 
     return Axios.get(requestUri)
       .then(res => res.data)

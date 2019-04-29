@@ -71,11 +71,18 @@ export class SinglePageCard extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
+  debugger;
   let slug = ownProps.match.params.item_slug;
-  return {
-    book: state.books.find(item => item.best_book.id === slug),
-    description: state.description
-  };
+  if (state.favbooks !== undefined && state.favbooks.length !== 0)
+    return {
+      book: state.favbooks.find(item => item.best_book.id === slug),
+      description: state.description
+    };
+  else
+    return {
+      book: state.books.find(item => item.best_book.id === slug),
+      description: state.description
+    };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
